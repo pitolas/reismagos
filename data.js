@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-area-mirante",
-      "name": "Aérea mirante",
+      "name": "Igreja dos Reis Magos"",
       "levels": [
         {
           "tileSize": 256,
