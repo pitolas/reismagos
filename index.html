@@ -1,58 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+  <!-- Google Verification -->
   <meta name="google-site-verification" content="LSTYt4qdpAT7Akh8jAPXFf5DlqfZ6camBmmx68YdfBs" />
+
   <meta charset="UTF-8">
-  <title>Igreja dos Reis Magos – Tour 360 da Igreja Reis Magos em Nova Almeida, Serra - ES</title>
-  <meta name="description" content="Galeria de imagens 360 e tour virtual da Igreja Reis Magos com vistas aérea e diferentes orientações. Fotos profissionais e panorâmicas">
-  <meta name="keywords" content="Igreja Reis Magos, fotos Reis Magos, imagens Igreja, galeria panorâmica, vistas aéreas, tour virtual 360">
+
+  <title>Igreja dos Reis Magos – Tour Virtual 360° | Nova Almeida, Serra - ES</title>
+
+  <meta name="description" content="Explore em tour virtual 360° e imagens aéreas a Igreja dos Reis Magos, localizada em Nova Almeida, Serra - Espírito Santo. Projeto com fotos panorâmicas e documentação visual aérea.">
+
+  <meta name="keywords" content="Igreja dos Reis Magos, Nova Almeida, Serra ES, tour virtual 360, fotos aéreas, drone, patrimônio histórico Espírito Santo">
+
+  <meta name="author" content="Pítolas Armini">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (melhora compartilhamento WhatsApp/Facebook) -->
+  <meta property="og:title" content="Igreja dos Reis Magos – Tour Virtual 360°">
+  <meta property="og:description" content="Tour virtual e imagens aéreas da Igreja dos Reis Magos em Nova Almeida - Serra ES.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pitolas.github.io/reismagos/">
+
+  <link rel="canonical" href="https://pitolas.github.io/reismagos/">
+
+  <!-- CSS -->
+  <style>@-ms-viewport { width: device-width; }</style>
+  <link rel="stylesheet" href="vendor/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org (SEO avançado) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Igreja dos Reis Magos",
+    "description": "Patrimônio histórico localizado em Nova Almeida, Serra - Espírito Santo.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Serra",
+      "addressRegion": "ES",
+      "addressCountry": "BR"
+    },
+    "url": "https://pitolas.github.io/reismagos/"
+  }
+  </script>
+
 </head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-<title>ReisMagos</title>
-<meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
-</head>
+
 <body class="multiple-scenes view-control-buttons">
+
+<!-- Conteúdo textual estratégico para SEO -->
+<header style="display:none;">
+  <h1>Igreja dos Reis Magos – Nova Almeida, Serra - ES</h1>
+  <p>
+    A Igreja dos Reis Magos é um importante patrimônio histórico localizado em Nova Almeida,
+    no município da Serra, Espírito Santo. Este projeto apresenta um tour virtual 360° e
+    imagens aéreas captadas por drone, permitindo uma experiência imersiva do monumento.
+  </p>
+  <p>
+    Projeto desenvolvido por Pítolas Armini, especialista em geotecnologias,
+    mapeamento aéreo e documentação visual.
+  </p>
+</header>
 
 <div id="pano"></div>
 
 <div id="sceneList">
   <ul class="scenes">
-    
+
       <a href="javascript:void(0)" class="scene" data-id="0-area-mirante">
         <li class="text">Aérea mirante</li>
       </a>
-    
+
       <a href="javascript:void(0)" class="scene" data-id="1-area-igreja">
         <li class="text">Aérea igreja</li>
       </a>
-    
+
       <a href="javascript:void(0)" class="scene" data-id="2-mirante">
-        <li class="text">mirante</li>
+        <li class="text">Mirante</li>
       </a>
-    
+
       <a href="javascript:void(0)" class="scene" data-id="3-igreja-reis-magos---norte">
         <li class="text">Igreja Reis Magos - Norte</li>
       </a>
-    
+
       <a href="javascript:void(0)" class="scene" data-id="4-igreja-reis-magos---leste">
         <li class="text">Igreja Reis Magos - Leste</li>
       </a>
-    
+
       <a href="javascript:void(0)" class="scene" data-id="5-igreja-reis-magos---sul">
         <li class="text">Igreja Reis Magos - Sul</li>
       </a>
-    
+
       <a href="javascript:void(0)" class="scene" data-id="6-igreja-reis-magos---oeste">
         <li class="text">Igreja Reis Magos - Oeste</li>
       </a>
-    
+
   </ul>
 </div>
 
@@ -61,43 +108,43 @@
 </div>
 
 <a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
+  <img class="icon off" src="img/play.png" alt="Iniciar rotação automática">
+  <img class="icon on" src="img/pause.png" alt="Pausar rotação automática">
 </a>
 
 <a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
+  <img class="icon off" src="img/fullscreen.png" alt="Tela cheia">
+  <img class="icon on" src="img/windowed.png" alt="Modo janela">
 </a>
 
 <a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
+  <img class="icon off" src="img/expand.png" alt="Expandir lista">
+  <img class="icon on" src="img/collapse.png" alt="Recolher lista">
 </a>
 
 <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
+  <img class="icon" src="img/up.png" alt="Mover para cima">
 </a>
 <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
+  <img class="icon" src="img/down.png" alt="Mover para baixo">
 </a>
 <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
+  <img class="icon" src="img/left.png" alt="Mover para esquerda">
 </a>
 <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
+  <img class="icon" src="img/right.png" alt="Mover para direita">
 </a>
 <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
+  <img class="icon" src="img/plus.png" alt="Zoom aproximar">
 </a>
 <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
+  <img class="icon" src="img/minus.png" alt="Zoom afastar">
 </a>
 
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
-
+<!-- Scripts -->
+<script src="vendor/screenfull.min.js"></script>
+<script src="vendor/bowser.min.js"></script>
+<script src="vendor/marzipano.js"></script>
 <script src="data.js"></script>
 <script src="index.js"></script>
 
